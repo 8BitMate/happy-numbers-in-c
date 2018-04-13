@@ -148,6 +148,7 @@ int main(int argc, char *argv[]) {
     int_vector numbers = find_happy_numbers(n);
     size_t size = numbers.size;
     uint32_t *vector = numbers.vector;
+    printf("The fifty largest happy numbers found:\n");
     for (size_t i = size < 50 ? 0 : size - 50; i < size; ++i) {
         printf("%d\n", vector[i]);
     }
